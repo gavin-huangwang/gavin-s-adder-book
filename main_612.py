@@ -1,3 +1,4 @@
+#coding=utf-8
 from adress_book import Person
 import json
 import os

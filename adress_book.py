@@ -1,4 +1,4 @@
-# coding:utf_8
+#coding=utf-8
 import json
 import os
 import sys
@@ -39,7 +39,7 @@ class Person():
     def select(self):
         self.name = input('ENTOR YOUR NAME')
         if self.name in self.adder_dict:
-            print('name:%d,iphone:%d'%(self.name,self.iphone))
+            print('name:{0},iphone:{1}'.format(self.name,self.iphone))
         else:
             print('name is not in here')
 
@@ -55,7 +55,7 @@ class Person():
 
     def show(self):
         for self.name,self.iphone in self.adder_dict.items():
-            print('name:%d,iphone:%d'%(self.name,self.iphone))
+            print('name:{0},iphone:{1}'.format(self.name,self.iphone))
 
 if __name__=='__main__':
     os.system('clear')
